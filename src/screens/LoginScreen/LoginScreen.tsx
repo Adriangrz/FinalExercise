@@ -12,10 +12,10 @@ import * as Yup from 'yup';
 
 import {styles} from './styles';
 import {useAuth} from '../../contexts';
+import {Login} from '../../types/login';
 
 import {Input} from '../../components/Input';
 import {Button} from '../../components/Button';
-import {Login} from '../../types/login';
 
 type LoginData = {
   SubmitValues: Login;

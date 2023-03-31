@@ -16,8 +16,8 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   error: {
-    color: theme.palette.red.main,
     alignSelf: 'stretch',
+    color: theme.palette.red.main,
     textAlign: 'center',
   },
 });

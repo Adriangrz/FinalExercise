@@ -8,8 +8,8 @@ export const styles = StyleSheet.create({
     alignSelf: 'stretch',
     backgroundColor: theme.palette.primary.main,
     borderRadius: theme.spacings.sm,
-    padding: theme.spacings.base,
     justifyContent: 'center',
+    padding: theme.spacings.base,
   },
   text: {
     color: theme.palette.white.main,

@@ -1,7 +1,7 @@
 export type PaletteColor = {
   dark?: string;
-  main: string;
   light?: string;
+  main: string;
 };
 
 type ThemePalette = {
@@ -19,14 +19,14 @@ type ThemeFontSizes = {
 };
 
 type ThemeSpacings = {
-  sm: number;
   base: number;
-  md: number;
   lg: number;
+  md: number;
+  sm: number;
 };
 
 export type ThemeType = {
-  palette: ThemePalette;
   fontSizes: ThemeFontSizes;
+  palette: ThemePalette;
   spacings: ThemeSpacings;
 };

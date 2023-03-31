@@ -43,9 +43,9 @@ export const theme: ThemeType = {
     h4: 14,
   },
   spacings: {
-    sm: 4,
     base: 8,
-    md: 16,
     lg: 24,
+    md: 16,
+    sm: 4,
   },
 };
