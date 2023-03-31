@@ -1,7 +1,7 @@
-import {useQuery} from 'react-query';
+import {useMutation, useQuery} from 'react-query';
 
 import {handleSelectors} from '../shared';
-import {fetchPosts} from './requests';
+import {createPost, fetchPosts} from './requests';
 import {getPosts} from './selectors';
 import {PostsQueryKey} from './types';
 
@@ -16,3 +16,9 @@ export const useGetPosts = ({
     ...options,
   });
 };
+
+export const useCreatePost = (options = {}) =>
+  useMutation(createPost, {
+    mutationKey: 'createPost',
+    ...options,
+  });

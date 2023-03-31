@@ -1,4 +1,4 @@
-import {Post} from '../../types/post';
+import {CreatePost, Post} from '../../types/post';
 import client from '../client';
 import {PostsQueryKey} from './types';
 
@@ -14,3 +14,5 @@ export const fetchPosts = ({
     },
   });
 };
+
+export const createPost = (data: CreatePost) => client.post('/posts', data);
